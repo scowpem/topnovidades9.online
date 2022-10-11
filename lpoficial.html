@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+	
+	
+	
+	
+	
+	<!---???????????? INICIO UTM  ????????????---> <script>
+    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://checkout.abmex.com.br"];
+
+function getParams() {
+    let t = "",
+        e = window.top.location.href,
+        r = new URL(e);
+    if (null != r) {
+        let a = r.searchParams.get("utm_source"),
+            n = r.searchParams.get("utm_medium"),
+            o = r.searchParams.get("utm_campaign"),
+            m = r.searchParams.get("utm_term"),
+            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${c}`), console.log(t)
+    }
+    return t
+}! function() {
+    var t = new URLSearchParams(window.location.search);
+    t.toString() && document.querySelectorAll("a").forEach(function(e) {
+        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
+    })
+}();
+</script><!---???????????? FINAL UTM + ANALYTICS HOTMART ????????????--->
+	
+	
+	
+	
+	
+	
+	
+	<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" rel="stylesheet" />
 	<link href="https://fonts.googleapis.com" rel="preconnect" />
 	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
